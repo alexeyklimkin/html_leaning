@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="unicode">
+    <title> java </title>
+</head>
+<body>
+<!-- application -->
+<div id="app">
+    {{ message }}
+    <span v-if="seen">Сейчас меня видно</span>
+</div>
+<div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+</div>
+
+<div id="components-demo">
+    <button-counter :count="11"></button-counter>
+</div>
+
+</body>
+<script src="./vue.min.js"></script>
+<script src="./components.js"></script>
+<script src="./index.js"></script>
+</html>
+    
